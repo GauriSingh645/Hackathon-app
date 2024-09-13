@@ -1,0 +1,161 @@
+/* Importing Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* General styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+h1, h2 {
+  font-weight: 600;
+  color: #333;
+}
+
+/* Buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+}
+
+button:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+/* Input fields */
+input, select, textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin: 5px 0;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Hackathon Card Styling */
+.hackathon-card {
+  background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.hackathon-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.hackathon-card img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.hackathon-card h3 {
+  font-size: 24px;
+  margin: 10px 0;
+  color: #333;
+}
+
+.hackathon-card p {
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.hackathon-card .hackathon-level {
+  font-weight: bold;
+  color: #4CAF50;
+  margin-top: 10px;
+}
+
+/* Timer Styles */
+.timer {
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #4CAF50;
+}
+
+/* Edit and Delete Buttons */
+button.edit-btn {
+  background-color: #007bff;
+  color: white;
+  margin-right: 10px;
+}
+
+button.delete-btn {
+  background-color: #dc3545;
+  color: white;
+}
+
+button.edit-btn:hover {
+  background-color: #0056b3;
+}
+
+button.delete-btn:hover {
+  background-color: #c82333;
+}
+
+/* Search and Filter Section */
+.search-filter {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.search-filter input, .search-filter select {
+  width: 200px;
+  padding: 10px;
+  margin-right: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hackathon-list {
+    grid-template-columns: 1fr;
+  }
+
+  .search-filter {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .search-filter input, .search-filter select {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+/* Adding transitions to hover effects */
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+a:hover {
+  color: #007bff;
+}

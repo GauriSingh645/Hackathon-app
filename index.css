@@ -1,0 +1,196 @@
+/* index.css */
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Body */
+  body {
+    background: linear-gradient(135deg, #f9f9f9, #e0e0e0);
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Header */
+  .header {
+    background: #2196F3;
+    color: #fff;
+    padding: 20px 30px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header .logo {
+    width: 120px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .header h1 {
+    margin-top: 10px;
+    font-size: 28px;
+    color: #fff;
+  }
+  
+  /* Main Container */
+  .container {
+    padding: 30px;
+  }
+  
+  /* Hackathon List */
+  .hackathon-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .hackathon-card {
+    background: #ffffff;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 320px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .hackathon-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .hackathon-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .hackathon-card .content {
+    padding: 15px;
+    background: #fafafa;
+  }
+  
+  .hackathon-card .content h2 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .hackathon-card .content p {
+    font-size: 15px;
+    color: #555;
+  }
+  
+  .hackathon-card .footer {
+    padding: 10px;
+    text-align: center;
+    background: #e0e0e0;
+  }
+  
+  .hackathon-card .footer .status {
+    display: inline-block;
+    padding: 8px 12px;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .hackathon-card .footer .status.active {
+    background: #4caf50; /* Green */
+  }
+  
+  .hackathon-card .footer .status.upcoming {
+    background: #ff9800; /* Orange */
+  }
+  
+  .hackathon-card .footer .status.past {
+    background: #f44336; /* Red */
+  }
+  
+  .hackathon-card .footer .timer {
+    font-size: 15px;
+    margin-top: 5px;
+    color: #333;
+  }
+  
+  /* Buttons */
+  button {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+  }
+  
+  button:hover {
+    background: #0056b3;
+    transform: scale(1.05);
+  }
+  
+  button.delete {
+    background: #dc3545;
+  }
+  
+  button.delete:hover {
+    background: #c82333;
+  }
+  
+  button.edit {
+    background: #ffc107;
+  }
+  
+  button.edit:hover {
+    background: #e0a800;
+  }
+  
+  /* Forms */
+  form {
+    margin: 20px 0;
+  }
+  
+  form input,
+  form textarea,
+  form select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  form input[type="submit"] {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+  
+  form input[type="submit"]:hover {
+    background: #0056b3;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .hackathon-list {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .hackathon-card {
+      width: 100%;
+      max-width: 500px;
+    }
+  }
+  
